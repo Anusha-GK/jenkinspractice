@@ -1,0 +1,55 @@
+Skip to content
+
+Search…
+All gists
+GitHub
+New gist
+@Thripura 
+2
+7 @tomoconnortomoconnor/pom.xml
+Created 7 years ago • 
+ 
+<script src="https://gist.github.com/tomoconnor/1099270.js"></script>
+  
+ Code  Revisions 1  Stars 2  Forks 7
+Example pom.xml
+ pom.xml
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>jenkinspractice</groupId>
+  <artifactId>jenkinsdemo</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+  
+  
+  <name>jpademo</name>
+  <url>http://maven.apache.org</url>
+    <build>
+	<plugins>
+		<plugin>
+			<!-- Build an executable JAR -->
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>2.4</version>
+			<configuration>
+				<archive>
+					<manifest>
+						<mainClass>test</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugin>
+	</plugins>
+</build>
+
+  <dependencies>
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.14</version>
+      </dependency>
+  </dependencies>
+
+</project>
