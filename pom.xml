@@ -20,7 +20,7 @@
 			<configuration>
 				<archive>
 					<manifest>
-						<mainClass>test</mainClass>
+						<mainClass>test.class</mainClass>
 					</manifest>
 				</archive>
 			</configuration>
